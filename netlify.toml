@@ -1,6 +1,6 @@
 [build]
-  command = "yarn prisma generate && yarn build"
+  command = "yarn install && yarn prisma generate && yarn build"
   publish = ".next"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+[environment]
+  DATABASE_URL = "mongodb+srv://prismaNext:i9FVbYnjlFKgtpnK@prisma-next.qqjt5xi.mongodb.net/todonext"
